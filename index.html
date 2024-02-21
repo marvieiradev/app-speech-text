@@ -4,10 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
     <title>App Voz para Texto</title>
 </head>
 
 <body>
+    <div class="container">
+        <p class="header">Voz para Texto</p>
+        <div class="settings">
+            <div class="language">
+                <p>Idioma: </p>
+                <select id="language"></select>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <button class="btn record">
+            <div class="icon">
+                <i class='bx bx-microphone'></i>
+                <i class='bx bx-loader bx-spin'></i>
+            </div>
+            <p>Escutar</p>
+        </button>
+        <p>Resultado: </p>
+        <div class="result" spellcheck="false">
+            <p class="resultText"></p>
+        </div>
+        <div class="separator"></div>
+        <div class="buttons">
+            <button class="btn clear">Limpar</button>
+            <button class="btn download" disabled>Download</button>
+        </div>
+    </div>
+
+
+
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8e4a25e86e.js" crossorigin="anonymous"></script>
 
 </body>
 
